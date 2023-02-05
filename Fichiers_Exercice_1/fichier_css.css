@@ -1,0 +1,152 @@
+body {
+    /*prop pour le body toute la page*/
+    background-color: white;
+    width: 900px;
+    border: 1px solid;
+    margin: auto;
+}
+
+.bouton-vert {
+    width: 90px;
+    height: 23px;
+    background-image: url("image/button.png");
+    float: right;
+    font-size: 12px;
+    color: gray;
+    line-height: 21px;
+    text-align: left;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.column {
+    flex: 33.33%;
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+}
+.column_bis {
+    flex: 33.33%;
+    height: 500px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+
+.column_mere {
+    display: flex;
+}
+
+.description {
+    font-size: 10px;
+    /*La taille de la police en pixels*/
+    margin-bottom: 0px;
+    /*La marge inférieur en pixels*/
+    color: black;
+    text-align: justify;
+}
+.description_bis {
+    font-size: 10px;
+    /*La taille de la police en pixels*/
+    margin-bottom: 1px;
+    /*La marge inférieur en pixels*/
+    color: black;
+    text-align: justify;
+}
+
+.image_logo {
+    float: left;
+    /*Le bouton se situe à droite de son bloc*/
+    background-repeat: no-repeat;
+    /*L'image de fond ne se répète pas*/
+
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+}
+
+.logo_button
+
+/*Propriétes de la classe bouton (image de bouton avec du texte)*/
+    {
+    float: right;
+    /*Le bouton se situe à droite de son bloc*/
+    background-repeat: no-repeat;
+    /*L'image de fond ne se répète pas*/
+    height: 23px;
+    /*Hauteur de l'élement (correspond à la hauteur de l'image en pixels)*/
+    width: 110px;
+    /*Largeur de l'élement (correspond à la largeur de l'image en pixels)*/
+}
+
+
+
+#menu {
+    height: 38px;
+    width: 900px;
+    background-image: url('image/menu.png');
+    display: flex;
+    flex-direction: row;
+}
+
+#menu a {
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    /* pas de soulignage */
+    font-size: 14px;
+}
+
+#menu a:first-of-type {
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+}
+
+#menu a:hover {
+    background-image: url('image/menu-hover.png');
+}
+
+
+.menu-separator {
+    background-image: url("image/menu-separator.png");
+    height: 38px;
+    width: 1px;
+}
+
+.titre
+
+/*Propriétés pour les titres des paragraphes (définies par une classe)*/
+    {
+    font-size: 20px;
+    /*La taille de la police en pixels*/
+    margin-bottom: 0px;
+    /*La marge inférieur en pixels*/
+    height: 48px;
+    /*La hauteur de l'élément en pixels*/
+    color: darkcyan;
+    /*La couleur de la police est cyan foncé*/
+    text-align: left;
+}
+.titre_bis
+
+/*Propriétés pour les titres des paragraphes (définies par une classe)*/
+    {
+    font-size: 20px;
+    /*La taille de la police en pixels*/
+    margin-bottom: 0px;
+    /*La marge inférieur en pixels*/
+    height: 20px;
+    /*La hauteur de l'élément en pixels*/
+    color: darkcyan;
+    /*La couleur de la police est cyan foncé*/
+    text-align: left;
+}

@@ -1,0 +1,60 @@
+.banner {
+    max-height:7em; 
+    width: 100%;
+}
+body {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.element1{
+    order:1;
+    width:200px;
+}
+.element2{
+    order:2;
+    flex:2;
+    height:550px;
+}
+.footer{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    background-image: url(image/pied_de_page.png);
+    text-align: center;
+    color:white;
+    height:30px;
+    background-repeat: no-repeat;
+    width: 900px;
+}
+#menu{
+    background-image: url(image/menu.png);
+    display : flex;
+    flex-direction: column;
+    margin-right:10px;
+}
+#menu a{
+    height : 1.7em;
+    line-height : 1.7em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border:solid 1px grey;
+    padding: 2px;
+    font-weight: bold;
+}
+.sous-titre{
+    color :navy;
+    text-decoration:underline cyan;
+    list-style: circle;
+}
+.titre{
+    color:navy;
+    text-decoration:underline cyan;
+}
