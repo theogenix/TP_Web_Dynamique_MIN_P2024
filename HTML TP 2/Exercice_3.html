@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text / html / charset=utf-8" />
+    <link rel="stylesheet" type="text/css" title="design" href="Exercice_3_css.css" />
+    <title> Exercice_3 </title>
+    <style>
+    </style>
+    <script language="javascript">
+
+        function Calculer_PrixTTC() {
+            var Champ_Texte_Entree;
+            var Champ_Texte_Plat;
+            var Champ_Texte_Dessert;
+            var Entree;
+            var Plat;
+            var Dessert
+            var Total;
+
+            Champ_Texte_Entree = document.getElementById('EnText');
+            Champ_Texte_Plat = document.getElementById('PlText');
+            Champ_Texte_Dessert = document.getElementById('DeText');
+            Champ_Texte_Total = document.getElementById('To');
+            Champ_Entree = document.getElementById("En");
+            Champ_Plat = document.getElementById('Pl');
+            Champ_Dessert = document.getElementById('De');
+
+            Entree = parseFloat(Champ_Entree.value);
+            Plat = parseFloat(Champ_Plat.value);
+            Dessert = parseFloat(Champ_Dessert.value);
+
+            Total = Entree + Plat + Dessert;
+            Champ_Entree.value = Entree;
+            Champ_Plat.value = Plat;
+            Champ_Dessert.value = Dessert;
+            Champ_Texte_Total.value = Total;
+        }
+        function Afficher_prix() {
+            var Champ_Texte_Entree;
+            var Champ_Texte_Plat;
+            var Champ_Texte_Dessert;
+            var Entree;
+            var Plat;
+            var Dessert
+            var Total;
+
+            Champ_Texte_Entree = document.getElementById('EnText');
+            Champ_Texte_Plat = document.getElementById('PlText');
+            Champ_Texte_Dessert = document.getElementById('DeText');
+            Champ_Texte_Total = document.getElementById('To');
+            Champ_Entree = document.getElementById("En");
+            Champ_Plat = document.getElementById('Pl');
+            Champ_Dessert = document.getElementById('De');
+
+            Entree = parseFloat(Champ_Entree.value);
+            Plat = parseFloat(Champ_Plat.value);
+            Dessert = parseFloat(Champ_Dessert.value);
+            Total = Entree + Plat + Dessert;
+            Champ_Texte_Entree.value = Entree;
+            Champ_Texte_Plat.value = Plat;
+            Champ_Texte_Dessert.value = Dessert;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="epf">
+        <img class="logo" src="image/epf_logo_new.png" alt="logo epf" />
+    </div>
+    <br>
+    <div id="menu">
+        <a href="default.asp">Home</a>
+        <div class="menu-separator"></div>
+        <a href="news.asp">Intégration HTML</a>
+        <div class="menu-separator"></div>
+        <a href="contact.asp">CSS</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">JavaScript</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Php</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Autres...</a>
+    </div>
+    <br>
+    Composez votre menu
+    <br>
+    <br>
+    <div class="container">
+        <div class="element1">
+            <div class="texte">
+                Entrée:
+                <select id="En" name="En">
+                    <option value="1">Carottes</option>
+                    <option value="2">Radis</option>
+                    <option value="3">Salade</option>
+                </select>
+            </div>
+        </div>
+        <div class="element2">
+            <div class=texte>
+                Plat:
+                <select id="Pl" name="Pl">
+                    <option value="4">boeuf</option>
+                    <option value="5">poisson</option>
+                    <option value="6">poulet</option>
+                </select>
+            </div>
+        </div>
+        <div class="element3">
+            <div class="texte">
+                Dessert:
+                <select id="De" name="De">
+                    <option value="7">tarte</option>
+                    <option value="8">glace</option>
+                    <option value="9">crêpe</option>
+                </select>
+            </div>
+        </div>
+        <div class="element4">
+            <div>
+                <input type="button" value="Choisir" class="texte_button"
+                    Onclick="Calculer_PrixTTC();Afficher_prix();" />
+            </div>
+        </div>
+    </div>
+    <hr>
+    <container2>
+        <div class="texte2">
+            Montant à payer
+        </div>
+        <br>
+        <div class=element4>
+            <div class="texte3">
+                Entrée :
+                <input class="bordure_none" type="text" size="20" id="EnText" readonly />
+                
+            </div>
+            </element4>
+            <div class="element5">
+                <div class="texte3">
+                    Plat :
+                    <input class="bordure_none" type="text" size="20" id="PlText" readonly />
+                </div>
+            </div>
+            <div class="element6">
+                <div class="texte3">
+                    Dessert :
+                    <input class="bordure_none" type="text" size="20" id="DeText" readonly />
+                </div>
+            </div>
+    </container2>
+        <hr>
+        <div class="texte2">
+            Montant total :
+            <input class="bordure_none" type="text" size="20" id="To" readonly />
+        </div>
+
+</body>
+
+</html>

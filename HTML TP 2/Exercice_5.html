@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text / html / charset=utf-8" />
+    <link rel="stylesheet" type="text/css" title="design" href="Exercice_5_css.css" />
+    <title> Exercice_5 </title>
+    <style>
+    </style>
+    <script language="javascript">
+        function creerTableau(nbeColonne) {
+            nbeColonne=insererNombre();
+            var tableau = Array.from({ length: nbeColonne }, () => Math.floor(Math.random() * nbeColonne));
+            document.getElementById("arrPrint").innerHTML = tableau;
+            return tableau;
+        }
+        function insererNombre(){
+            var champTexteColonne;
+            champTexteColonne = document.getElementById('TC');
+            nbeColonne = parseInt(champTexteColonne.value);
+            champTexteColonne = nbeColonne;
+            return nbeColonne;
+        }
+
+        function trierTableau(tableau) {
+            tableau=creerTableau();
+            var tableauTrie=tableau.sort(function (a, b) {
+                return a - b;
+            });
+            document.getElementById("arrPrintSorted").innerHTML=tableauTrie;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="epf">
+        <img class="logo" src="image/epf_logo_new.png" alt="logo epf" />
+    </div>
+    <br>
+    <div id="menu">
+        <a href="default.asp">Home</a>
+        <div class="menu-separator"></div>
+        <a href="news.asp">Intégration HTML</a>
+        <div class="menu-separator"></div>
+        <a href="contact.asp">CSS</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">JavaScript</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Php</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Autres...</a>
+    </div>
+    <br>
+    <div class="image_italie_position">
+        <img class="image_italie_size" name="Italie" src="image/Italie-4-scaled.jpg" alt="Italie" width="400"
+            border="1px solid" />
+    </div>
+    <br>
+    <br>
+    <fieldset>
+        <legend class="texte"> Tri de tableau </legend>
+        <br>
+        <div class="container">
+            <div class="element1">
+                <input type="button" value="Insérer nbe colonnes" class="texte_button" Onclick="insererNombre();" />
+                <input type="button" value="Créer un tableau" class="texte_button" Onclick="creerTableau();" />
+                <input type="button" value="Trier le tableau" class="texte_button" Onclick="trierTableau();" />
+            </div>
+        </div>
+        <br>
+        <hr>
+        <container2>
+            <div class="element2">
+                <div class="texte3">
+                    Nombre de colonnes :
+                </div>
+                <input type="text" size="20" id="TC" />
+            </div>
+        </container2>
+        <container3>
+            <div class="tableau">
+                <br>
+                Le tableau généré est :
+            </div>
+            <div class="tableau2">
+                <div id="arrPrint">
+                </div>
+            </div>
+            <div class="tableau3">
+                    Le tableau trié est :
+            </div>
+            <div class="tableau4">
+                <div id="arrPrintSorted">
+                </div>
+            </div>
+        </container3>
+
+    </fieldset>
+</body>
+
+</html>

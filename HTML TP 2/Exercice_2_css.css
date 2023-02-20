@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+    width: 900px;
+    margin: auto;
+}
+fieldset{
+        width: 0;
+}
+.logo {
+    width: 15%;
+    height: auto;
+}
+#menu {
+    height: 38px;
+    width: 900px;
+    background-image: url('image/menu.png');
+    display: flex;
+    flex-direction: row;
+}
+#menu a {
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    /* pas de soulignage */
+    font-size: 14px;
+}
+
+#menu a:first-of-type {
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+}
+#menu a:hover {
+    background-image: url('image/menu-hover.png');
+}
+
+
+.menu-separator {
+    background-image: url("image/menu-separator.png");
+    height: 38px;
+    width: 1px;
+}
+#PU{
+    color :red;
+    text-decoration:underline cyan;
+    text-align: center;
+}
+#TVA{
+    color:green;
+}
+.texte{
+    color :navy;
+    text-decoration:underline cyan;
+}
+.texte_button{
+    color:navy;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline aqua;
+    background-color: yellow;
+}
+.texte_rectangle{
+    color :navy;
+    text-decoration:underline cyan;
+    text-align: center;
+}
+.titre_bordure{
+    color:navy;
+    text-decoration:underline red;
+    text-align: center;
+
+}

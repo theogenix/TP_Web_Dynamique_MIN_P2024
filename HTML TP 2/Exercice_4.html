@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text / html / charset=utf-8" />
+    <link rel="stylesheet" type="text/css" title="design" href="Exercice_4_css.css" />
+    <title> Exercice_4 </title>
+    <style>
+    </style>
+    <script language="javascript">
+        function lire_Parametres() {
+            var champ_Texte_Bordure;
+            var champ_Texte_Hauteur;
+            var champ_Texte_Largeur;
+            var champ_Texte_Nom;
+            var champ_Texte_Source;
+
+            var image = document.querySelector(".image_italie_size")
+            var height = image.height;
+            var width = image.width;
+            var border = image.border;
+            var name = image.name;
+            var source = image.getAttribute("src");
+
+            champ_Texte_Bordure = document.getElementById('Bo');
+            champ_Texte_Hauteur = document.getElementById('Ha');
+            champ_Texte_Largeur = document.getElementById('La');
+            champ_Texte_Nom = document.getElementById('No');
+            champ_Texte_Source = document.getElementById('So');
+
+            champ_Texte_Bordure.value = border;
+            champ_Texte_Hauteur.value = height;
+            champ_Texte_Largeur.value = width;
+            champ_Texte_Nom.value = name;
+            champ_Texte_Source.value = source;
+
+        }
+        function modifier_Parametres() {
+            var champ_Texte_Bordure;
+            var champ_Texte_Hauteur;
+            var champ_Texte_Largeur;
+            var champ_Texte_Nom;
+            var champ_Texte_Source;
+
+            var image = document.querySelector(".image_italie_size")
+
+            champ_Texte_Bordure = document.getElementById('Bo');
+            champ_Texte_Hauteur = document.getElementById('Ha');
+            champ_Texte_Largeur = document.getElementById('La');
+            champ_Texte_Nom = document.getElementById('No');
+            champ_Texte_Source = document.getElementById('So');
+
+            Bordure = champ_Texte_Bordure.value;
+            Hauteur = parseInt(champ_Texte_Hauteur.value);
+            Largeur = parseInt(champ_Texte_Largeur.value);
+            Nom =champ_Texte_Nom.value;
+            Source =champ_Texte_Source.value;
+
+
+            image.setAttribute("src", Source);
+            image.width = Largeur;
+            image.height=Hauteur;
+            image.name=Nom;
+            image.border=Bordure;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="epf">
+        <img class="logo" src="image/epf_logo_new.png" alt="logo epf" />
+    </div>
+    <br>
+    <div id="menu">
+        <a href="default.asp">Home</a>
+        <div class="menu-separator"></div>
+        <a href="news.asp">Intégration HTML</a>
+        <div class="menu-separator"></div>
+        <a href="contact.asp">CSS</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">JavaScript</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Php</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Autres...</a>
+    </div>
+    <br>
+    <div class="image_italie_position">
+        <img class="image_italie_size" name="Italie paysage" src="image/Italie-4-scaled.jpg" alt="Italie" width="400"
+            border="1px solid" />
+    </div>
+    <br>
+    <br>
+        <fieldset>
+            <legend class="texte"> Propriétés d'une image </legend>
+            <br>
+            <div class="container">
+                <div class="element1">
+                    <input type="button" value="Lire propriétés" class="texte_button" Onclick="lire_Parametres();" />
+                    <input type="button" value="Ecrire propriétés" class="texte_button" Onclick="modifier_Parametres();" />
+                </div>
+            </div>
+            <br>
+            <hr>
+            <container2>
+                <div class=element2>
+                    <div class="texte3">
+                        Bordure :
+                    </div>
+                    <input type="text" size="20" id="Bo" placeholder="1px border solid"/>
+                </div>
+                <div class="element2">
+                    <div class="texte3">
+                        Hauteur :
+                    </div>
+                    <input type="text" size="20" id="Ha" placeholder="267" />
+                </div>
+                <div class="element2">
+                    <div class="texte3">
+                        Largeur :
+                    </div>
+                    <input type="text" size="20" id="La" placeholder="400"/>
+                </div>
+                <div class="element2">
+                    <div class="texte3">
+                        Nom :
+                    </div>
+                    <input type="text" size="20" id="No" />
+                </div>
+                <div class="element2">
+                    <div class="texte3">
+                        Source :
+                    </div>
+                    <input type="text" size="20" id="So" />
+                </div>
+            </container2>
+        </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body{
+    background-color: white;
+    width: 900px;
+    margin: auto;
+}
+.bordure_none{
+    border:none;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.container3{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.element1{
+
+
+}
+fieldset{
+        width: 0;
+}
+.logo {
+    width: 15%;
+    height: auto;
+}
+#menu {
+    height: 38px;
+    width: 900px;
+    background-image: url('image/menu.png');
+    display: flex;
+    flex-direction: row;
+}
+#menu a {
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    /* pas de soulignage */
+    font-size: 14px;
+}
+
+#menu a:first-of-type {
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+}
+#menu a:hover {
+    background-image: url('image/menu-hover.png');
+}
+
+
+.menu-separator {
+    background-image: url("image/menu-separator.png");
+    height: 38px;
+    width: 1px;
+}
+#PU{
+    color :red;
+    text-decoration:underline cyan;
+    text-align: center;
+}
+#TVA{
+    color:green;
+}
+.texte{
+    color :navy;
+    font-weight: bold;
+}
+.texte2{
+    color :black;
+    font-weight: bold;
+
+}
+.texte3{
+    color : black;
+}
+.texte_button{
+    color:navy;
+    font-style:normal;
+    text-decoration: underline black;
+    background-color:aquamarine;
+}
+.texte_rectangle{
+    color :navy;
+    text-decoration:underline cyan;
+    text-align: center;
+}
+.titre_bordure{
+    color:navy;
+    text-decoration:underline red;
+    text-align: center;
+
+}

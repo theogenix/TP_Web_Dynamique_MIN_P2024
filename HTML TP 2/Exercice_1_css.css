@@ -1,0 +1,37 @@
+body{
+    background-color: white;
+    width: 900px;
+    margin: auto;
+}
+fieldset{
+// Ajouter un code ici
+}
+#PU{
+    color :red;
+    text-decoration:underline cyan;
+}
+#TVA{
+    color :green;
+    text-decoration:underline cyan;
+}
+#QT{
+    color:blueviolet;
+    text-decoration:underline cyan;
+}
+#PT{
+    color:black;
+    text-decoration:underline cyan;
+}
+.texte{
+    color :navy;
+    text-decoration:underline red;
+}
+.texte2{
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+}
+.texte_button{
+    color:navy;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:antiquewhite;
+}

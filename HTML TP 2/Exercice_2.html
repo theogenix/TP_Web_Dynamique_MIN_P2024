@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text / html / charset=utf-8" />
+    <link rel="stylesheet" type="text/css" title="design" href="Exercice_2_css.css" />
+    <title> Exercice_2 </title>
+    <style>
+    </style>
+    <script language="javascript">
+        function Calculer_nombre() {
+            var Champ_Texte_nombre1;
+            var Champ_Texte_nombre2;
+            var Champ_Texte_total;
+            var Nombre1;
+            var Nombre2;
+            var Total;
+            Champ_Texte_nombre1 = document.getElementById('N1');
+            Champ_Texte_nombre2 = document.getElementById('N2');
+            Champ_Texte_total = document.getElementById('TOT');
+            Nombre1 = parseFloat(Champ_Texte_nombre1.value);
+            Nombre2 = parseFloat(Champ_Texte_nombre2.value);
+            Total = Nombre1*Nombre2;
+            Champ_Texte_total.value=Total;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="epf">
+        <img class="logo" src="image/epf_logo_new.png" alt="logo epf" />
+    </div>
+    <br>
+    <div id="menu">
+        <a href="default.asp">Home</a>
+        <div class="menu-separator"></div>
+        <a href="news.asp">Intégration HTML</a>
+        <div class="menu-separator"></div>
+        <a href="contact.asp">CSS</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">JavaScript</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Php</a>
+        <div class="menu-separator"></div>
+        <a href="about.asp">Autres...</a>
+    </div>
+    <br>
+    <center>
+    <fieldset>
+        <legend class="titre_bordure"> Produit de deux nombres </legend>
+        <label class="texte_rectangle">
+            Nombre 1 :
+        </label>
+        <br>
+        <input type="text" size="20" id="N1" />
+        <br>
+        <br>
+        <label class="texte_rectangle">
+            Nombre 2 :
+        </label>
+        <br>
+        <input type="text" size="20" id="N2" />
+        <br>
+        <br>
+        <input type="button" value="Calculer le produit" class="texte_button" Onclick="Calculer_nombre();" />
+        <br>
+        <br>
+        Total : <br>
+
+        <input type="text" size="20" id="TOT" />
+    </fieldset>
+    </center>
+</body>
+
+</html>
